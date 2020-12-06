@@ -1,0 +1,91 @@
+body {
+  margin: auto;
+  padding: 0;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-color: darkslategray;
+  color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .hero {
+  position: relative;
+}
+
+.container .hero .title {
+  font-size: 8rem;
+  padding: 2rem 5rem;
+}
+
+.container .hero .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-clip-path: circle(10% at 100% 0%);
+          clip-path: circle(10% at 100% 0%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.container .hero .overlay .content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 2rem;
+  background-color: #333;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.container .hero .overlay .content span.i {
+  font-size: 0.8em;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.container .hero .overlay .content .head {
+  font-size: 3rem;
+}
+
+.container .hero .overlay .content .body {
+  margin-top: 10px;
+}
+
+.container .hero .overlay:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-clip-path: circle(150% at 100% 0%);
+          clip-path: circle(150% at 100% 0%);
+}
+
+.container .hero .overlay:hover span.i {
+  opacity: 0;
+}
