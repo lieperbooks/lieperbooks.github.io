@@ -28,25 +28,27 @@ body {
             top: 0; bottom: 0;
             left: 0; right: 0;
 
-            clip-path: circle(10% at 100% 0%);
-            transition: all 0.3s ease-in-out;
-
+            clip-path: circle(4% at 96% 15%);
+            transition: all 0.5s cubic-bezier(.48,.16,.87,.63);
+            
             cursor: pointer;
+            opacity: 0.9;
+            background-color: darkolivegreen;
 
             .content {
                 position: absolute;
                 top: 0; bottom: 0;
                 left: 0; right: 0;
                 font-size: 2rem;
-                background-color: #333;
 
                 padding: 2rem;
 
                 span.i {
                     font-size: 0.8em;
                     position: absolute;
-                    right: 15px; top: 10px;
+                    right: 30px; top: 16px;
                     transition: all 0.2s ease-in-out;
+                    color: antiquewhite;
                 }
 
                 display: flex;
@@ -63,8 +65,10 @@ body {
             }
 
             &:hover {
-                transition: all 0.5s ease-in-out;
+                transition: all 1s cubic-bezier(.48,.16,.87,.63);
                 clip-path: circle(150% at 100% 0%);
+                opacity: 1;
+                background-color: #333;
 
                 span.i {
                     opacity: 0;
