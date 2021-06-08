@@ -1,6 +1,10 @@
 body {
     margin: auto;
     padding: 0;
+
+    a {
+        color: #FFF;
+    }
 }
 
 .container {
@@ -8,19 +12,24 @@ body {
     margin: 0;
     height: 100vh;
 
-    background-color: darkslategray;
+    background-color: #00b8ff;
     color: antiquewhite;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
+    .logo {
+        margin: auto 50px;
+    }
 
     .hero {
         position: relative;
 
         .title {
-            font-size: 8rem;
-            padding: 2rem 5rem;
+            font-size: 6rem;
+            padding: 2rem 3rem;
         }
         
         .overlay {
@@ -33,10 +42,10 @@ body {
             
             cursor: pointer;
             opacity: 0.9;
-            background-color: darkolivegreen;
+            background-color: olivedrab;
 
             .content {
-                position: absolute;
+                position: relative;
                 top: 0; bottom: 0;
                 left: 0; right: 0;
                 font-size: 2rem;
@@ -46,7 +55,7 @@ body {
                 span.i {
                     font-size: 0.8em;
                     position: absolute;
-                    right: 30px; top: 16px;
+                    right: 25px; top: 32px;
                     transition: all 0.2s ease-in-out;
                     color: antiquewhite;
                 }
