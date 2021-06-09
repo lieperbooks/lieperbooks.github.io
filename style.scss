@@ -1,6 +1,10 @@
 body {
     margin: auto;
     padding: 0;
+
+    a {
+        color: #FFF;
+    }
 }
 
 .container {
@@ -8,73 +12,36 @@ body {
     margin: 0;
     height: 100vh;
 
-    background-color: darkslategray;
+    background-color: #00b8ff;
     color: antiquewhite;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    .logo {
+        margin: auto;
+    }
 
     .hero {
         position: relative;
 
         .title {
-            font-size: 8rem;
-            padding: 2rem 5rem;
+            font-size: 4rem;
+            padding: 2rem 3rem;
         }
-        
-        .overlay {
-            position: absolute;
-            top: 0; bottom: 0;
-            left: 0; right: 0;
 
-            clip-path: circle(4% at 96% 15%);
-            transition: all 0.5s cubic-bezier(.48,.16,.87,.63);
-            
-            cursor: pointer;
-            opacity: 0.9;
-            background-color: darkolivegreen;
+        .body {
+            margin-top: 10px;
+                font-size: 1.4rem;
 
-            .content {
-                position: absolute;
-                top: 0; bottom: 0;
-                left: 0; right: 0;
+            .head {
                 font-size: 2rem;
-
-                padding: 2rem;
-
-                span.i {
-                    font-size: 0.8em;
-                    position: absolute;
-                    right: 30px; top: 16px;
-                    transition: all 0.2s ease-in-out;
-                    color: antiquewhite;
-                }
-
-                display: flex;
-                flex-direction: column;
-                align-content: space-between;
-
-                .head {
-                    font-size: 3rem;
-                }
-
-                .body {
-                    margin-top: 10px;
-                }
-            }
-
-            &:hover {
-                transition: all 1s cubic-bezier(.48,.16,.87,.63);
-                clip-path: circle(150% at 100% 0%);
-                opacity: 1;
-                background-color: #333;
-
-                span.i {
-                    opacity: 0;
-                }
+                margin: 1.3rem auto;
             }
         }
-
     }
 }
