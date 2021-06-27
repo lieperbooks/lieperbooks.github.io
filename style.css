@@ -1,6 +1,7 @@
 body {
   margin: auto;
   padding: 0;
+  line-height: 34px;
 }
 
 body a {
@@ -50,5 +51,100 @@ body a {
 .container .hero .body .head {
   font-size: 2rem;
   margin: 1.3rem auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .text {
+  font-size: 36px;
+}
+
+.header div {
+  margin: 0 30px;
+}
+
+.header .image img {
+  width: 300px;
+}
+
+.content {
+  font-size: 24px;
+  margin: 40px;
+}
+
+.center {
+  text-align: center;
+}
+
+.creme {
+  padding: 30px auto;
+  background-color: #fff4de;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.mt {
+  margin-top: 40px;
+}
+
+.pt {
+  padding-top: 40px;
+}
+
+.mb {
+  margin-bottom: 40px;
+}
+
+.pb {
+  padding-bottom: 40px;
+}
+
+.my {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.py {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.btn {
+  background-color: #00b8ff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 1px 1px 10px 3px #ddd;
+          box-shadow: 1px 1px 10px 3px #ddd;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.readmore {
+  color: #888;
+  cursor: pointer;
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */

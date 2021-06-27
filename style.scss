@@ -2,6 +2,8 @@ body {
     margin: auto;
     padding: 0;
 
+    line-height: 34px;
+
     a {
         color: #FFF;
     }
@@ -44,4 +46,93 @@ body {
             }
         }
     }
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    .text {
+        font-size: 36px;
+    }
+
+    div{
+        margin: 0 30px;
+    }
+
+    .image img {
+        width: 300px;
+    }
+}
+
+.content {
+    font-size: 24px;
+    margin: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+.creme {
+    padding: 30px auto;
+    background-color: #fff4de;
+}
+
+.m0 {
+    margin: 0;
+}
+
+.p0 {
+    padding: 0;
+}
+
+.mt {
+    margin-top: 40px;
+}
+
+.pt {
+    padding-top: 40px;
+}
+
+.mb {
+    margin-bottom: 40px;
+}
+
+.pb {
+    padding-bottom: 40px;
+}
+
+.my {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.py {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.btn {
+    background-color: #00b8ff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    &:hover{
+        box-shadow: 1px 1px 10px 3px #ddd;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.readmore {
+    color: #888;
+    cursor: pointer;
+    font-size: 18px;
 }
