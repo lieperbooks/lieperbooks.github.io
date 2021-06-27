@@ -6,88 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LieperBooks | About Us</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="position-relative">
 
-
-    <div class="header creme">
-        <div class="text">About Us</div>
-        <div class="image">
-            <img src="assets/about.png" alt="">
-        </div>
-    </div>
-    <div class="content">
-        We help connect book enthusiasts and bookstores together<br />
-        We are all about books. We provide a refreshing take on the social platform for readers, writers,<br />
-        reviewers and bloggers with an integrated massive book library powered by Independent Bookstores<br />
-    </div>
-    <div></div>
-    <div class="content">
-        Over 500+ bookstores reached<br />
-        Available in Mumbai<br />
-        Google play Apple store and affiliates<br />
-        Followers active members and stuff<br />
+    <div class="video-container position-absolute overflow-hidden w-100">
+        <video autoplay muted loop id="video">
+            <source src="./assets/video/background-video.mp4" type="video/mp4">
+        </video>
     </div>
 
+    <div class="container-fluid position-absolute m-0 p-0">
 
-    <div class="header creme">
-        <div>
-            <div class="text pt">Our Goals</div>
+        <header class="d-flex flex-wrap justify-content-center py-1 border-bottom border-light text-light">
+            <a href="/index.htm" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none px-3">
+                <img src="./assets/logo.png" alt="" height="32" class="px-3" />
+                <span class="logo-header fs-4 text-light">lieperbooks</span>
+            </a>
 
-            <div class="content m0 py">
-                The book community does not have a singular place to grow and flourish online. A<br />
-                huge portion of this is to be blamed on the new age online portals that just swooped in and displaced
-                the bookstores disturbing the independent literary circles and the<br />
-                whole ecosystem of bookstores which was hurried and could not adapt to the sudden change.<br />
-                <span class="readmore" onclick="unhide('.hidden'); hide(this)">Read more...</span>
-            </div>
-            <div class="content hidden m0 py">
-                We answer this change. Books are important, books are a form of meaningful<br />
-                interaction in a way the online retailers can never understand, we celebrate them<br />
-                and to do them and the ones who read and write them justice we give the power<br />
-                back to the people in the community.<br />
-            </div>
-        </div>
-        <div class="image">
-            <img src="assets/goals.png" alt="">
-        </div>
-    </div>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="/goals.htm" class="nav-link text-white">Our Goals</a></li>
+                <li class="nav-item"><a href="/join.htm" class="nav-link text-white">Join Us</a></li>
+            </ul>
+        </header>
 
-    <div class="mt">
-
-        <div class="header">
-            <div class="image">
-                <img src="assets/join.png" alt="">
-            </div>
-            <div>
-                <div class="text">
-                    Join Us
-
-                    <div class="content" style="margin: 0; margin-top: 30px;">
-                        We love books just like you. We believe people like you are important and we want you to join us
-                        on this journey to promote the book culture.
-                        <br>
-                        <br>
-                        <a class="btn" href="mailto: manager@lieperbooks.com">Join Now</a>
-                    </div>
+        <section class="container-fluid text-light">
+            <div class="p-5 m-3">
+                <h1 class="display-3">About Us</h1>
+                <hr>
+                <div>
+                    This about us text here
                 </div>
             </div>
-        </div>
-        <br>
+        </section>
 
     </div>
 
-    <script>
-        function unhide(elm) {
-            let _item = document.querySelector(elm);
-            _item.classList.remove('hidden');
-        }
-        function hide(elm) {
-            elm.classList.add('hidden');
-        }
-    </script>
 </body>
 
 </html>
