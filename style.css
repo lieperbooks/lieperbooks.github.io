@@ -1,14 +1,14 @@
 body {
   margin: auto;
   padding: 0;
-  line-height: 34px;
+  font-size: large;
 }
 
 body a {
   color: #FFF;
 }
 
-.container {
+.containe {
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -30,25 +30,25 @@ body a {
   text-align: center;
 }
 
-.container .logo {
+.containe .logo {
   margin: auto;
 }
 
-.container .hero {
+.containe .hero {
   position: relative;
 }
 
-.container .hero .title {
+.containe .hero .title {
   font-size: 4rem;
   padding: 2rem 3rem;
 }
 
-.container .hero .body {
+.containe .hero .body {
   margin-top: 10px;
   font-size: 1.4rem;
 }
 
-.container .hero .body .head {
+.containe .hero .body .head {
   font-size: 2rem;
   margin: 1.3rem auto;
 }
@@ -69,5 +69,26 @@ video {
 
 header {
   background-color: #00b8ff;
+}
+
+.colored {
+  background-color: #00b8ff;
+  color: #FFF;
+}
+
+img.art {
+  width: 350px;
+}
+
+img.art-logo {
+  width: 120px;
+}
+
+.google-badge {
+  height: 100px;
+}
+
+.apple-badge {
+  height: 70px;
 }
 /*# sourceMappingURL=style.css.map */
