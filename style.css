@@ -8,63 +8,8 @@ body a {
   color: #FFF;
 }
 
-.containe {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  background-color: #00b8ff;
-  color: antiquewhite;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.containe .logo {
-  margin: auto;
-}
-
-.containe .hero {
-  position: relative;
-}
-
-.containe .hero .title {
-  font-size: 4rem;
-  padding: 2rem 3rem;
-}
-
-.containe .hero .body {
-  margin-top: 10px;
-  font-size: 1.4rem;
-}
-
-.containe .hero .body .head {
-  font-size: 2rem;
-  margin: 1.3rem auto;
-}
-
 .logo-header {
   font-family: Comfortaa;
-}
-
-video {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 
 header {
